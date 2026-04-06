@@ -36,7 +36,7 @@
 - 基于 Ant Design 和 `@ant-design/cssinjs` 构建
 - 提供多步推理可视化、工具调用展示、任务执行协同等 Agentic UI 能力
 - 支持国际化（i18n）
-- 使用 Dumi 构建文档站点
+- 使用 Vite 构建文档站点
 - 使用 Father 构建产物
 - 使用 Vitest + React Testing Library 进行单元测试
 - 使用 Playwright 进行 E2E 测试
@@ -72,7 +72,7 @@ pnpm install
 ### 常用开发命令
 
 ```bash
-pnpm start              # 启动文档站点（http://localhost:8000）
+pnpm start              # 启动文档站点（Vite，http://localhost:8000）
 pnpm run build          # 构建项目
 pnpm test               # 运行单元测试
 pnpm run test:coverage  # 运行测试并生成覆盖率报告
@@ -108,7 +108,7 @@ agentic-ui/
 ├── tests/                   # 测试文件
 ├── e2e/                     # E2E 测试
 ├── scripts/                 # 构建和工具脚本
-├── .dumirc.ts               # Dumi 配置
+├── website/                 # Vite 文档站（vite.config.ts）
 ├── .fatherrc.ts             # Father 构建配置
 ├── vitest.config.ts         # Vitest 配置
 ├── playwright.config.ts     # Playwright 配置
@@ -683,7 +683,7 @@ export default InternalComponent;
 | 工具     | 用途               |
 | -------- | ------------------ |
 | Father   | 组件编译（dist）   |
-| Dumi     | 文档站点构建       |
+| Vite     | 文档站点构建       |
 | Vitest   | 单元测试           |
 | Playwright | E2E 测试        |
 
@@ -698,7 +698,7 @@ export default InternalComponent;
 | `.prettierrc.js`| Prettier 配置   |
 | `vitest.config.ts` | Vitest 配置  |
 | `playwright.config.ts` | Playwright 配置 |
-| `.dumirc.ts`   | Dumi 配置        |
+| `website/vite.config.ts` | Vite 文档站配置   |
 | `.fatherrc.ts` | Father 配置      |
 
 ---

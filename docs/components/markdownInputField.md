@@ -233,8 +233,8 @@ export default () => {
 | <kbd>Cmd</kbd> + <kbd>B</kbd> / <kbd>Ctrl</kbd> + <kbd>B</kbd>                                       | 加粗                 |
 | <kbd>Cmd</kbd> + <kbd>I</kbd> / <kbd>Ctrl</kbd> + <kbd>I</kbd>                                       | 斜体                 |
 | <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> / <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | 删除线               |
-| <kbd>Option</kbd> + <kbd>`</kbd> / <kbd>Alt</kbd> + <kbd>`</kbd>                                     | 行内代码             |
-| <kbd>Cmd</kbd> + <kbd>\</kbd> / <kbd>Ctrl</kbd> + <kbd>\</kbd>                                       | 清除格式             |
+| <kbd>Option</kbd> + <kbd>&#96;</kbd> / <kbd>Alt</kbd> + <kbd>&#96;</kbd>                             | 行内代码             |
+| <kbd>Cmd</kbd> + <kbd>&#92;</kbd> / <kbd>Ctrl</kbd> + <kbd>&#92;</kbd>                               | 清除格式             |
 | <kbd>Cmd</kbd> + <kbd>1</kbd>~<kbd>4</kbd> / <kbd>Ctrl</kbd> + <kbd>1</kbd>~<kbd>4</kbd>             | 标题 H1 ~ H4         |
 | <kbd>Cmd</kbd> + <kbd>0</kbd> / <kbd>Ctrl</kbd> + <kbd>0</kbd>                                       | 转换为普通段落       |
 | <kbd>Cmd</kbd> + <kbd>]</kbd> / <kbd>Ctrl</kbd> + <kbd>]</kbd>                                       | 增加标题级别（变小） |

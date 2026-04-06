@@ -1,8 +1,6 @@
 node_modules
 /dist
-.dumi/tmp
-.dumi/tmp-test
-.dumi/tmp-production
+.dumi/
 .DS_Store
 /docs-dist
 tsconfig.tsbuildinfo

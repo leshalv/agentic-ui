@@ -27,7 +27,7 @@ description: Guides development workflow, design system, scripts, and component 
 
 - **源码**：`src/`，单组件目录含 `ComponentName.tsx`、`style.ts`、`types.ts`、`index.tsx`，子组件/`hooks`/`utils` 按需。
 - **导出入口**：`src/index.ts` 按功能分区导出；新增组件需在此处与对应组件 `index` 中声明。
-- **文档**：`docs/`，Dumi 配置 `.dumirc.ts`。
+- **文档**：`docs/`，Vite 文档站 `website/vite.config.ts`。
 - **测试**：`tests/`（Vitest）、`e2e/`（Playwright）。
 - **脚本**：`scripts/`（如 `checkDemoFiles.js`、`bumpVersion.js`、`generateDemoReport.js`）。
 

@@ -30,11 +30,14 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chromium
 
-      - name: Start Dev Server
+      - name: Build docs and start preview server
         run: |
-          pnpm start &
-          echo "Waiting for server..."
-          npx wait-on http://localhost:8000 -t 300000
+          pnpm run docs:build
+          pnpm run preview &
+          echo "Waiting for preview on 4172..."
+          npx wait-on http://127.0.0.1:4172 -t 300000
 
       - name: Run E2E Tests
+        env:
+          SKIP_WEBSERVER: '1'
         run: pnpm run test:e2e

@@ -1,5 +1,5 @@
 /**
- * Dumi `~demos/<id>` 路由，与 docs/demos-pages/playwright-fixtures.md 中 `<code id="...">` 对应。
+ * 文档站 `/~demos/<id>` 路由（与 Dumi 一致的 demo id），与 docs/demos-pages/playwright-fixtures.md 中 `<code id="...">` 对应。
  * 勿改用组件文档里的 demo 序号（如 markdowneditor-demo-1），以免文档调整顺序后 E2E 失效。
  */
 export const PLAYWRIGHT_FIXTURE_DEMOS = {

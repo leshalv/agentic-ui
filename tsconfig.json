@@ -14,14 +14,11 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@@/*": [".dumi/tmp/*"],
       "@ant-design/agentic-ui": ["./src"],
       "@ant-design/agentic-ui/*": ["src/*", "*"]
     }
   },
   "include": [
-    ".dumirc.ts",
-    ".dumi/typing.d.ts",
     "docs/demos/**/*",
     "docs/components/**/*",
     "src/**/*",
@@ -29,5 +26,13 @@
     "docs/pure.tsx",
     "home/**/*"
   ],
-  "exclude": ["home/demo-components", "**/__tests__/**", "**/*.test.ts", "**/*.test.tsx", "tests/**"]
+  "exclude": [
+    "home/demo-components",
+    "**/__tests__/**",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "tests/**",
+    "website",
+    "docs-dist"
+  ]
 }
